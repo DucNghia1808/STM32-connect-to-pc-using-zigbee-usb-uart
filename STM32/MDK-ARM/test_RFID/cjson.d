@@ -1,0 +1,10 @@
+test_rfid\cjson.o: ..\..\timer_tnv\cJSON\cJSON.c
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+test_rfid\cjson.o: ..\..\timer_tnv\cJSON\cJSON.h
+test_rfid\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
