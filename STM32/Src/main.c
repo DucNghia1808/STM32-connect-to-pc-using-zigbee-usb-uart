@@ -96,7 +96,7 @@ uint8_t TB4last = 0;
 uint8_t CB1last = 0;/// cam bien
 uint8_t CB2last = 0;
 
-uint8_t start = 1;
+uint8_t start = 0;
 
 
 unsigned char CardID[5];

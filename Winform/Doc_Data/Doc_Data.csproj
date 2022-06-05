@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10AFB4C9-B308-41A8-84B4-512CAD0AE382}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Doc_Data</RootNamespace>
+    <AssemblyName>Doc_Data</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>C:\Users\nghia\Downloads\c#-ExportExcelWithInterop\ExportExcelWithInterop\ExportExcelWithInterop\bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ptit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EEE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Quilt Printables_ Christmas Appliques - Seams And Scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Silhouette Design Store_ Ice Snowflake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water_on.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water_off.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snow1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free Icon _ Profile user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector Add User Icon, User Icons, Add Icons, Account PNG and Vector with Transparent Background for Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khoa_icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\khoa_icon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connect.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mui_ten.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\day.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunset.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
